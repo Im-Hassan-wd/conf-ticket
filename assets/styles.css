@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+:root {
+  --neutral-0: hsl(0, 0%, 100%);
+  --neutral-300: hsl(252, 6%, 83%);
+  --neutral-500: hsl(245, 15%, 58%);
+  --neutral-700: hsl(245, 19%, 35%);
+  --neutral-900: hsl(248, 70%, 10%);
+  --orange-500: hsl(7, 88%, 67%);
+  --orange-700: hsl(7, 71%, 60%);
+  --orange-100: hsl(7, 88%, 75%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  background-image: url(./images/background-desktop.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--neutral-0);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px auto;
+}
+.bg {
+  position: absolute;
+  pointer-events: none;
+}
+.bg-1 {
+  width: initial;
+  right: 20%;
+  bottom: 20%;
+}
+.bg-2 {
+  width: 100%;
+}
+.bg-3 {
+  bottom: 0;
+  left: 0;
+}
+.bg-4 {
+  right: 0;
+  top: 0;
+}
+main {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* home page  */
+.logo {
+  margin: 10px auto;
+}
+h1 {
+  font-size: 3rem;
+  max-width: 700px;
+  margin: 10px auto;
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+form {
+  margin: 30px auto;
+  /* width: 500px; */
+}
+.input-div {
+  margin: 30px 0;
+}
+.avatar-div {
+  margin: 10px 0;
+  /* background: var(--neutral-700); */
+  align-items: center;
+  border: 1px dashed var(--neutral-500);
+  border-radius: 5px;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  cursor: pointer;
+}
+.img-div {
+  background: var(--neutral-700);
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--neutral-500);
+}
+.img-div img {
+  width: 20px;
+}
+.avatar-div span {
+  margin-top: 10px;
+  display: inline-block;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+input,
+button {
+  border: none;
+  border: 1px solid var(--neutral-500);
+  background: none;
+  padding: 8px 12px;
+  color: var(--neutral-0);
+  width: 400px;
+  border-radius: 5px;
+}
+input::placeholder {
+  color: var(--neutral-500);
+}
+input:hover {
+  background: var(--neutral-500);
+  /* opacity: 0.5; */
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  background: var(--orange-500);
+  border-color: var(--orange-500);
+  height: 40px;
+  font-weight: 800;
+  color: var(--neutral-900);
+  text-transform: capitalize;
+}
+
+/* Ticket page  */
+body.body-ticket {
+  height: 100vh;
+  overflow: hidden;
+}
+.get-ticket h1:nth-child(2) {
+  background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.get-ticket p {
+  line-height: 22px;
+}
+.get-ticket p span {
+  color: var(--orange-100);
+}
+.ticket {
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 200px;
+  width: 400px;
+  max-width: 600px;
+  background-image: url(./images/pattern-ticket.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.ticket .logo {
+  display: inline-block;
+  margin: 5px 0;
+}
+.ticket .head {
+  margin-bottom: auto;
+}
+.ticket .head span {
+  margin-left: 50px;
+  display: block;
+  font-size: 0.8rem;
+}
+.ticket h3 {
+  font-weight: 500;
+  line-height: 25px;
+}
+.ticket .user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.ticket .user .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.ticket p {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.ticket p img {
+  width: 20px;
+}
+.ticket .id {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: rotateZ(90deg);
+  color: #333;
+  font-weight: bold;
+}
+
+@media (min-width: 815px) {
+  .get-ticket h1:nth-child(1) {
+    display: inline;
+    margin-right: 10px;
+  }
+  .get-ticket h1:nth-child(2) {
+    display: inline;
+  }
+}
+@media (max-width: 814px) {
+  .bg-3,
+  .bg-4 {
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .ticket {
+    transform: scale(0.7);
+  }
+  .avatar-div,
+  input,
+  button {
+    width: 300px;
+  }
+}

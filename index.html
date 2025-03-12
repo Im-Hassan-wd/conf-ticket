@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+
+    <title>Conference ticket generator</title>
+  </head>
+  <body>
+    <img
+      class="bg bg-1"
+      src="./assets/images/pattern-circle.svg"
+      alt="background"
+    />
+    <img
+      class="bg bg-2"
+      src="./assets/images/pattern-lines.svg"
+      alt="background"
+    />
+    <img
+      class="bg bg-4"
+      src="./assets/images/pattern-squiggly-line-top.svg"
+      alt="background"
+    />
+
+    <header>
+      <img class="logo" src="./assets/images/logo-full.svg" alt="logo" />
+    </header>
+
+    <main>
+      <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <p>Secure your spot at next year's biggest coding conference.</p>
+
+      <form>
+        <div class="input-div">
+          <span>Upload Avatar</span>
+          <label for="avatar">
+            <div class="avatar-div">
+              <input type="file" style="display: none" id="avatar" />
+              <div class="img-div">
+                <img src="./assets/images/icon-upload.svg" alt="upload icon" />
+              </div>
+              <span class="upload">Drag & drop or click to upload</span>
+            </div>
+          </label>
+          <small
+            ><img src="./assets/images/icon-info.svg" />
+            <span>Upload your photo (JPG or PNG, max size: 500KB)</span></small
+          >
+        </div>
+
+        <div class="input-div">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Ofor Olanma Oluchi" />
+        </div>
+
+        <div class="input-div">
+          <label for="name">Email Address</label>
+          <input type="email" id="email" placeholder="oluchi1@gmail.com" />
+        </div>
+
+        <div class="input-div">
+          <label for="name">Gitub Username</label>
+          <input type="text" id="github" placeholder="@organic_girl" />
+        </div>
+
+        <button>Generate my ticket</button>
+      </form>
+
+      <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    </main>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

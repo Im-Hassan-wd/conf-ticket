@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+
+    <title>Ticket - Conference ticket generator</title>
+  </head>
+  <body class="body-ticket">
+    <img
+      class="bg bg-1"
+      src="./assets/images/pattern-circle.svg"
+      alt="background"
+    />
+    <img
+      class="bg bg-2"
+      src="./assets/images/pattern-lines.svg"
+      alt="background"
+    />
+    <img
+      class="bg bg-3"
+      src="./assets/images/pattern-squiggly-line-bottom-desktop.svg"
+      alt="background"
+    />
+    <img
+      class="bg bg-4"
+      src="./assets/images/pattern-squiggly-line-top.svg"
+      alt="background"
+    />
+    <header>
+      <img class="logo" src="./assets/images/logo-full.svg" alt="" />
+    </header>
+    <div class="get-ticket">
+      <h1>Congrat,</h1>
+      <h1 class="name"></h1>
+      <h1>Your ticket is ready.</h1>
+
+      <p>We've emailed your ticket to</p>
+      <p><span class="email"></span> and will send updates in</p>
+      <p>the run up to the event.</p>
+    </div>
+
+    <div class="ticket">
+      <div class="head">
+        <img class="logo" src="./assets/images/logo-full.svg" />
+        <span>Jan 31, 2025 / austin, TX</span>
+      </div>
+      <div class="user">
+        <img
+          class="avatar"
+          src="./assets/images/image-avatar.jpg"
+          alt="avatar"
+        />
+        <div>
+          <h3 class="name"></h3>
+          <p>
+            <img src="./assets/images/icon-github.svg" alt="github" />
+            <span class="github"></span>
+          </p>
+          <div class="id"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <button class="download">Download My Ticket</button> -->
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="./scripts/ticket.js"></script>
+  </body>
+</html>
